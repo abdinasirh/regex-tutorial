@@ -15,39 +15,46 @@ Matching an Email – /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
+<!-- - [OR Operator](#or-operator) -->
 - [Character Classes](#character-classes)
-- [Flags](#flags)
+<!-- - [Flags](#flags) -->
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
+<!-- - [Greedy and Lazy Match](#greedy-and-lazy-match) -->
+<!-- - [Boundaries](#boundaries)
 - [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+- [Look-ahead and Look-behind](#look-ahead-and-look-behind) -->
 
 ## Regex Components
 
 ### Anchors
 Anchor symbols include the caret and the dollar sign. in the regex code above ^ sign symbolizes the beginning of a string and $ sign symbolized the end of a string.
 ### Quantifiers
+Quantifiers indicate that the preceding token must be matched a certain number of times. By default, quantifiers are greedy, and will match as many characters as possible. In the example above, {2,6} quantifier, matches the specified quantity of the previous token. {2,6} will match 2 to 6. the + matches 1 or more of the preceding token.
 
-### OR Operator
+
+<!-- ### OR Operator -->
 
 ### Character Classes
 
-### Flags
+Character classes match a character from a specific set. in our example above, [a-z] matches anything that falls between these two letters. \d Matches any digit character (0-9).
+<!-- ### Flags -->
 
 ### Grouping and Capturing
+Groups allow you to combine a sequence of tokens to operate on them together. Capture groups can be referenced by a backreference and accessed separately in the results. in the example above, we have 3 groups; ([a-z0-9_\.-]+), ([\da-z\.-]+) and ([a-z\.]{2,6}). 
 
 ### Bracket Expressions
+Brackets indicate a set of characters to match. In our example above, we will
+    1. [a-z0-9_\.-] indicates we are looking for lowercase a-z, 0-9 and so on.
+    2. [\da-z\.-] indicates we are looking any digit 0-9, a-z and so on
 
-### Greedy and Lazy Match
-
+<!-- ### Greedy and Lazy Match -->
+<!-- 
 ### Boundaries
 
 ### Back-references
 
-### Look-ahead and Look-behind
+### Look-ahead and Look-behind -->
 
 ## Author
 
