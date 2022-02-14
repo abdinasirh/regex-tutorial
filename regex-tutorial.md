@@ -42,5 +42,5 @@ Brackets indicate a set of characters to match. In our example above, we will
 
 Abdinasir Hassan a student at University of Minnesota bootcamp. You can reach me at
 
-    * Email: abdinasirduud20@gmail.com
-    * Github: https://github.com/abdinasirh
+    [Github](https://github.com/abdinasirh)
+
